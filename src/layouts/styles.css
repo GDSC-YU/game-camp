@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Audiowide", cursive;
+}
+
+#index {
+  background-image: url("/bg/index.gif");
+  background-size: cover;
+}
