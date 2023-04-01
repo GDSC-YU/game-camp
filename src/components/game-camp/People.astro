@@ -1,0 +1,55 @@
+---
+import { judges, consultants } from "../../data/people";
+---
+
+<section id="people" class="p-7 py-24">
+  <div class="flex flex-col items-center justify-center gap-y-5">
+    <h1
+      class="w-fit rounded-xl bg-gray-900/95 p-3 text-center text-3xl md:p-6 md:text-6xl"
+    >
+      Judges 🧑‍⚖️ & Consultants 🧑‍💻
+    </h1>
+    <div class="w-full py-16 lg:px-5 lg:py-24">
+      <div class="grid justify-items-center gap-y-4 md:grid-cols-2">
+        {
+          judges.map((dude) => {
+            return (
+              <div class="w-full p-2 lg:w-5/6">
+                <div class="flex h-full items-center rounded-lg bg-gray-900/80 p-4">
+                  <img
+                    alt="team"
+                    class="mr-4 h-16 w-16 flex-shrink-0 overflow-hidden rounded-full object-cover object-center"
+                    src={dude.image}
+                  />
+                  <div class="flex-grow">
+                    <h2 class="text-lg md:text-xl">{dude.name}</h2>
+                    <p>{dude.position}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        }
+        {
+          consultants.map((dude) => {
+            return (
+              <div class="w-full p-2 lg:w-5/6">
+                <div class="flex h-full items-center rounded-lg bg-gray-900/80 p-4">
+                  <img
+                    alt="team"
+                    class="mr-4 h-16 w-16 flex-shrink-0 overflow-hidden rounded-full object-cover object-center"
+                    src={dude.image}
+                  />
+                  <div class="flex-grow">
+                    <h2 class="text-lg">{dude.name}</h2>
+                    <p>{dude.position}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -12,3 +12,28 @@
   background-image: url("/bg/index.gif");
   background-size: cover;
 }
+
+.hack {
+  background-image: url("/bg/game-camp.gif");
+  background-size: cover;
+}
+
+#speakers {
+  background-image: url("/bg/game-camp2.gif");
+  background-size: cover;
+}
+
+#people {
+  background-image: url("/bg/game-camp3.gif");
+  background-size: cover;
+}
+
+#Workshops {
+  background-image: url("/bg/game-camp4.gif");
+  background-size: cover;
+}
+
+#faq {
+  background-image: url("/bg/game-camp5.gif");
+  background-size: cover;
+}
