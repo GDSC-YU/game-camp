@@ -42,9 +42,6 @@
             </p>
           </button>
         {/each}
-        <a href="https://5p7r83n4sp2.typeform.com/to/cEFAe5Mg" target="_blank">
-          <p class="text-xl font-medium hover:scale-110">Sign Up</p>
-        </a>
       </nav>
     </div>
     <!-- Mobile Nav Button && Logo -->
