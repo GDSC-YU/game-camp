@@ -2,7 +2,7 @@ export const faqData = [
   {
     question: "Who can attend game camp?",
     answer:
-      "Anyone interested in learning about game development. This includes students, hobbyists, and professionals.",
+      "Anyone interested in learning about game development! This includes students, hobbyists, and professionals.",
   },
   {
     question: "What will I learn at game camp?",
@@ -16,11 +16,12 @@ export const faqData = [
   },
   {
     question: "When and where will it be held?",
-    answer: "It will be held in tuwaiq academy? From idk yet - idk yet.",
+    answer:
+      "It will be held at Tuwaiq Academy from April 8th to April 13th, 2023, between 9 pm and 12 am.",
   },
   {
     question: "How much does it cost?",
     answer:
-      "Nothing! we'll even provide free food and coffee. Join us for a fun and engaging learning experience.",
+      "Nothing! We'll even provide free food and coffee. Join us for a fun and engaging learning experience.",
   },
 ];
