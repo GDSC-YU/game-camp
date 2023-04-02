@@ -82,6 +82,6 @@ export const judges = [
   {
     name: "Sara Alsabeg",
     position: "Judge",
-    image: "/people/test.jpg",
+    image: "/people/Sara Al-Sabeg.jpeg",
   },
 ];
