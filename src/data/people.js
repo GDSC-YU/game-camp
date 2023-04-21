@@ -5,7 +5,7 @@ export const speakers = [
     image: "/people/Layla Albabtain.jpg",
     workshops: [
       {
-        first: "- Into to game development",
+        first: "- Intro to game development",
         second: "- Unity and 3D games development",
         third: "- 3D art",
       },
