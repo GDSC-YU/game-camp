@@ -2,7 +2,7 @@ export const speakers = [
   {
     name: "Layla Albabtain",
     position: "Speaker & Judge",
-    image: "/people/Layla Albabtain.jpg",
+    image: "/people/Layla Albabtain.png",
     workshops: [
       {
         first: "- Intro to game development",
@@ -14,7 +14,7 @@ export const speakers = [
   {
     name: "Moaz Abu Shaqiyyah",
     position: "Speaker",
-    image: "/people/Moaz Abu Shaqiyyah.jpg",
+    image: "/people/Moaz Abu Shaqiyyah.png",
     workshops: [
       {
         first: "- Intro to game design",

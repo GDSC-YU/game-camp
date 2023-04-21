@@ -4,11 +4,11 @@ import { speakers } from "../../data/people";
 
 <section id="speakers" class="py-24">
   <div class="flex flex-col items-center justify-center gap-y-5 text-center">
-    <h1 class="w-fit rounded-xl bg-gray-900/95 p-3 text-4xl md:p-6 md:text-6xl">
-      Speakers 🎤
+    <h1 class="w-fit rounded-xl bg-gray-900/95 p-3 text-4xl sm:text-6xl md:p-6">
+      Speakers 💬
     </h1>
     <div
-      class="grid items-center justify-center justify-items-center gap-4 p-5 md:w-5/6 md:grid-cols-2"
+      class="grid items-center justify-center justify-items-center gap-5 lg:w-5/6 lg:grid-cols-2"
     >
       {
         speakers.map((dude) => {
@@ -20,7 +20,7 @@ import { speakers } from "../../data/people";
                   class="mb-4 h-48 w-48 flex-shrink-0 rounded-lg object-cover object-center sm:mb-0"
                   src={dude.image}
                 />
-                <div class="flex-grow sm:pl-8">
+                <div class="flex-grow sm:ml-6">
                   <h2 class="mb-3 text-xl">{dude.name}</h2>
                   {dude.workshops.map((stuff) => {
                     return (
