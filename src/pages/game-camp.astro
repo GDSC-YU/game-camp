@@ -4,7 +4,7 @@ import Header from "../components/game-camp/Header.svelte";
 import Hero from "../components/game-camp/Hero.astro";
 import Speakers from "../components/game-camp/people/Speakers.astro";
 import People from "../components/game-camp/people/People.astro";
-import Workshops from "../components/game-camp/Workshops.svelte";
+import Workshops from "../components/game-camp/Workshops.astro";
 import Faq from "../components/game-camp/Faq.astro";
 // Stuff
 import Spacer from "../components/Spacer.astro";
@@ -32,7 +32,7 @@ import "../layouts/styles.css";
     <Spacer />
     <People />
     <Spacer />
-    <Workshops client:load />
+    <Workshops />
     <Spacer />
     <Faq />
     <ScrollUp client:only="svelte" />
