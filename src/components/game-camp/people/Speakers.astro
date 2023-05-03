@@ -1,5 +1,5 @@
 ---
-import { speakers } from "../../data/people";
+import { speakers } from "../../../data/people";
 ---
 
 <section id="speakers" class="py-24">
@@ -13,11 +13,11 @@ import { speakers } from "../../data/people";
       {
         speakers.map((dude) => {
           return (
-            <div class="w-full rounded-xl bg-gray-900/95 p-4">
+            <div class="w-full rounded-3xl bg-gray-900/95 p-4">
               <div class="flex h-full flex-col items-center justify-center sm:flex-row sm:justify-start sm:text-left">
                 <img
                   alt="team"
-                  class="mb-4 h-48 w-48 flex-shrink-0 rounded-lg object-cover object-center sm:mb-0"
+                  class="mb-4 h-40 w-40 flex-shrink-0 rounded-lg object-cover object-center sm:mb-0"
                   src={dude.image}
                 />
                 <div class="flex-grow sm:ml-6">

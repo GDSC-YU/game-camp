@@ -2,8 +2,8 @@
 // Sections
 import Header from "../components/game-camp/Header.svelte";
 import Hero from "../components/game-camp/Hero.astro";
-import Speakers from "../components/game-camp/Speakers.astro";
-import People from "../components/game-camp/People.astro";
+import Speakers from "../components/game-camp/people/Speakers.astro";
+import People from "../components/game-camp/people/People.astro";
 import Workshops from "../components/game-camp/Workshops.svelte";
 import Faq from "../components/game-camp/Faq.astro";
 // Stuff
@@ -23,7 +23,7 @@ import "../layouts/styles.css";
     <link rel="preload" href="/bg/game-camp.gif" as="image" type="image/gif" />
   </head>
   <body class="bg-black text-slate-100">
-    <div class="hack h-[100vh]">
+    <div class="hack">
       <Header client:only="svelte" />
       <Hero />
     </div>
