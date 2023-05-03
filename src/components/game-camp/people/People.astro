@@ -5,40 +5,38 @@ import ExpertCard from "./ExpertCard.astro";
 import { judges, consultants } from "../../../data/people";
 ---
 
-<section id="people" class="p-7 py-24">
-  <div class="flex flex-col items-center justify-center gap-y-5">
+<section id="people">
+  <div class="flex flex-col items-center justify-center gap-y-10">
     <SectionTitle title="Judges 🧑‍⚖️ & Consultants 🧑‍💻" />
-    <div class="w-full py-16 lg:px-5 lg:py-24">
-      <div
-        class="grid w-full flex-wrap justify-items-center gap-y-4 md:grid-cols-2 lg:grid-cols-3"
-      >
-        {
-          judges.map((dude) => {
-            return (
-              <>
-                <ExpertCard
-                  name={dude.name}
-                  img={dude.image}
-                  position={dude.position}
-                />
-              </>
-            );
-          })
-        }
-        {
-          consultants.map((dude) => {
-            return (
-              <>
-                <ExpertCard
-                  name={dude.name}
-                  img={dude.image}
-                  position={dude.position}
-                />
-              </>
-            );
-          })
-        }
-      </div>
+    <div
+      class="grid w-full justify-items-center gap-y-4 md:grid-cols-2 lg:grid-cols-3"
+    >
+      {
+        judges.map((dude) => {
+          return (
+            <>
+              <ExpertCard
+                name={dude.name}
+                img={dude.image}
+                position={dude.position}
+              />
+            </>
+          );
+        })
+      }
+      {
+        consultants.map((dude) => {
+          return (
+            <>
+              <ExpertCard
+                name={dude.name}
+                img={dude.image}
+                position={dude.position}
+              />
+            </>
+          );
+        })
+      }
     </div>
   </div>
 </section>

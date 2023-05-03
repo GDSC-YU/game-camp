@@ -8,6 +8,10 @@
   font-family: "Audiowide", cursive;
 }
 
+section {
+  @apply min-h-screen px-7 py-24;
+}
+
 #index {
   background-image: url("/bg/index.gif");
   background-size: cover;
