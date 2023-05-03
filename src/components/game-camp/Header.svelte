@@ -5,10 +5,11 @@
 
   import { navData } from "../../data/nav";
 
-  let mobileNavOpened = false;
+  let opened;
 
   function handleDad() {
-    mobileNavOpened = !mobileNavOpened;
+    opened = !opened;
+    document.body.classList.toggle("overflow-hidden");
   }
 
   const mql = window.matchMedia("(max-width: 777px)");
@@ -58,7 +59,7 @@
     </div>
   {/if}
   <!-- Mobile Nav Expanded -->
-  {#if mobileNavOpened}
+  {#if opened}
     <nav class="fixed left-0 top-0 z-10 h-screen w-screen bg-[#050c21]">
       <div class="flex items-center justify-between p-5">
         <img
