@@ -1,10 +1,12 @@
 ---
 import { Icon } from "astro-icon";
+
+import { logos } from "../../data/logos";
 ---
 
 <section
   id="landing"
-  class="flex h-[75vh] flex-col items-center justify-center p-5 md:h-[85vh]"
+  class="flex flex-col items-center justify-center p-5 md:py-24"
 >
   <div
     class="flex flex-col gap-7 rounded-lg bg-gray-900/70 px-3 py-6 text-center md:max-w-4xl md:gap-9 md:bg-gray-900/90"
@@ -19,24 +21,36 @@ import { Icon } from "astro-icon";
     <!-- Signing Up Icons -->
 
     <div class="flex flex-col items-center justify-center gap-6 text-center">
-      <p class="text-lg font-semibold md:text-xl">Sign Up</p>
+      <p class="flex gap-2 text-lg font-semibold md:text-xl">
+        Sign Up <Icon name="fa-solid:hand-point-down" class="h-6" />
+      </p>
       <!-- Icons -->
       <div class="flex flex-col gap-6 md:flex-row">
-        <a
-          href="https://ppxhl3j9e1y.typeform.com/to/yuaJBxv3"
-          target="_blank"
-          class="flex gap-2 hover:scale-110"
-        >
+        <a href="#" target="_blank" class="flex gap-2 hover:scale-110">
           <Icon name="fa-solid:user-circle" class="h-6" /> as a participant
         </a>
-        <a
-          href="https://ppxhl3j9e1y.typeform.com/to/uuOSmmYg"
-          target="_blank"
-          class="flex gap-2 hover:scale-110"
-        >
+        <a href="#" target="_blank" class="flex gap-2 hover:scale-110">
           <Icon name="fa-solid:hands-helping" class="h-6" /> as a volunteer
         </a>
       </div>
+    </div>
+    <!-- logos section -->
+    <div
+      class="grid grid-cols-3 items-center justify-items-center md:grid-cols-6"
+    >
+      {
+        logos.map((logo) => {
+          return (
+            <a
+              href={logo.href}
+              target="_blank"
+              class="transform p-2 drop-shadow-xl transition duration-300 hover:scale-75"
+            >
+              <img class="w-16 md:w-20" src={logo.src} alt={logo.name} />
+            </a>
+          );
+        })
+      }
     </div>
   </div>
 </section>

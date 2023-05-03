@@ -1,5 +1,5 @@
 <script>
-  import logo from "/gdsc.png";
+  import logo from "/logos/gdsc.png";
   import * as animateScroll from "svelte-scrollto-next";
   import Icon from "@iconify/svelte";
 
