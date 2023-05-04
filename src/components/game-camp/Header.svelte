@@ -29,7 +29,7 @@
       >
         <!-- Links -->
         <a href="/">
-          <p class="text-xl font-medium hover:scale-110">Home</p>
+          <p class="text-xl font-medium hover:scale-110">Home 👾</p>
         </a>
         {#each navData as link}
           <button
@@ -72,11 +72,11 @@
         </button>
       </div>
       <div
-        class="absolute left-1/2 top-1/2 flex h-full -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center gap-y-8"
+        class="absolute left-1/2 top-1/2 flex h-full -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center gap-y-8 whitespace-pre-line"
       >
         <!-- Links -->
         <a href="/">
-          <p class="text-2xl">Home</p>
+          <p class="text-2xl">Home 👾</p>
         </a>
         {#each navData as link}
           <button
