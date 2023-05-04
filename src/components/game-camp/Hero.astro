@@ -42,9 +42,15 @@ import { logos } from "../../data/logos";
               <a
                 href={logo.href}
                 target="_blank"
-                class="transform p-2 drop-shadow-xl transition duration-300 hover:scale-75"
+                class="p-2 transition duration-300 hover:scale-75"
               >
-                <img class="w-16 md:w-20" src={logo.src} alt={logo.name} />
+                <img
+                  class={
+                    logo.bright ? "w-16 brightness-200 md:w-20" : "w-16 md:w-20"
+                  }
+                  src={logo.src}
+                  alt={logo.name}
+                />
               </a>
             );
           })
