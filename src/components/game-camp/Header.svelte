@@ -14,7 +14,7 @@
   };
 </script>
 
-<header class="absolute w-full font-bold text-white">
+<header class="absolute z-50 w-full font-bold text-white">
   <!-- mobile nav -->
   <nav class="md:hidden">
     <!-- toggles fixed class when the menu is opened -->
@@ -33,7 +33,7 @@
     </div>
     <!-- hidden when the menu is closed -->
     <div
-      class="fixed flex h-screen w-screen flex-col items-center justify-center gap-y-10 whitespace-pre-wrap bg-[#050c21]"
+      class="fixed flex h-screen w-screen flex-col items-center justify-center gap-y-5 whitespace-pre-wrap bg-[#050c21]"
       class:hidden={!opened}
     >
       <!-- Links -->
