@@ -62,9 +62,24 @@ export const consultants = [
     image: "/people/Ghadah Alwagit.jpg",
   },
   {
+    name: "Kawthar Alrumyan",
+    position: "Consultant",
+    image: "/people/Kawthar Alrumyan.jpeg",
+  },
+  {
     name: "Rashid Alomari",
     position: "Consultant",
     image: "/people/Rashid Alomari.jpg",
+  },
+  {
+    name: "Salman Almutairi",
+    position: "Consultant",
+    image: "/people/Salman Almutairi.jpeg",
+  },
+  {
+    name: "Talal Alturki",
+    position: "Consultant",
+    image: "/people/Talal Alturki.jpeg",
   },
 ];
 
