@@ -12,12 +12,16 @@ section {
   @apply min-h-screen px-7 py-24;
 }
 
+.sectiondiv {
+  @apply flex flex-col items-center gap-y-8;
+}
+
 #index {
   background-image: url("/bg/index.gif");
   background-size: cover;
 }
 
-.hack {
+#landing {
   background-image: url("/bg/game-camp.gif");
   background-size: cover;
 }
@@ -40,4 +44,5 @@ section {
 #faq {
   background-image: url("/bg/game-camp5.gif");
   background-size: cover;
+  @apply py-5;
 }

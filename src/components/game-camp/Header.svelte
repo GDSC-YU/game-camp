@@ -20,7 +20,7 @@
   let mobileView = mql.matches;
 </script>
 
-<header>
+<header class="absolute w-full">
   <!-- Desktop Nav -->
   {#if !mobileView}
     <div class="container mx-auto flex flex-row flex-wrap items-center py-6">

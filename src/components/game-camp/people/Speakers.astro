@@ -5,7 +5,7 @@ import { speakers } from "../../../data/people";
 ---
 
 <section id="speakers">
-  <div class="flex flex-col items-center justify-center gap-y-10 text-center">
+  <div class="sectiondiv">
     <SectionTitle title="Speakers 💬" />
     <div
       class="grid items-center justify-center justify-items-center gap-5 lg:w-5/6 lg:grid-cols-2"
@@ -13,7 +13,7 @@ import { speakers } from "../../../data/people";
       {
         speakers.map((dude) => {
           return (
-            <div class="w-full rounded-3xl bg-gray-900/95 p-4">
+            <div class="w-full rounded-3xl bg-gray-900/80 p-4">
               <div class="flex h-full flex-col items-center justify-center sm:flex-row sm:justify-start sm:text-left">
                 <img
                   alt="team"
