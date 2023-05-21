@@ -1,0 +1,17 @@
+---
+const { img, name, position } = Astro.props;
+---
+
+<div class="w-full p-2">
+  <div class="flex h-full items-center rounded-3xl bg-gray-900/80 p-4">
+    <img
+      alt={`${name}'s Image`}
+      class="mr-4 h-20 w-20 flex-shrink-0 overflow-hidden rounded-full bg-[#282C34] object-cover object-center brightness-110"
+      src={img}
+    />
+    <div class="flex-grow">
+      <h2 class="text-xl">{name}</h2>
+      <p>{position}</p>
+    </div>
+  </div>
+</div>

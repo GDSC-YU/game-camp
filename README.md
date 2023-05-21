@@ -1,55 +1,22 @@
-# Astro Starter Kit: Basics
+# Game Camp 👾 - 2023 
 
-```
-npm create astro@latest -- --template basics
-```
+<div align="center">
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![GitHub](https://img.shields.io/github/license/GDSC-YU/game-camp?style=for-the-badge)
+[![GitHub Issues](https://img.shields.io/github/issues/GDSC-YU/game-camp?style=for-the-badge)](https://github.com/GDSC-YU/game-camp/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/GDSC-YU/game-camp?style=for-the-badge)](https://github.com/GDSC-YU/game-camp/pulls)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+</div>
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+This is the upcoming game camp event website, it is built using [Astro](https://astro.build/), [Svelte](https://svelte.dev/), and [Tailwind CSS](https://tailwindcss.com/) <3.
 
+As this is an upcoming event, there are still many details to be finalized and announced. However, we are excited to bring you a fun and engaging game camp experience in 2023, so stay tuned! 
 
-## 🚀 Project Structure
+## Contributing 🤝
 
-Inside of your Astro project, you'll see the following folders and files:
+We welcome all contributions to this project, as it was made by students for students (like always).
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Open an issue for any bug you find or feature requests.
+- Open a pull request fixing or enhancing something.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Get in touch with us if you have any questions.

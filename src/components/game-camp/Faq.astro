@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon";
+
+import SectionTitle from "./ui/SectionTitle.astro";
+
+import { faqData } from "../../data/faq";
+---
+
+<section id="faq">
+  <div class="sectiondiv">
+    <SectionTitle title="FAQ 🤔" />
+    <div
+      class="grid gap-7 border-t border-white pt-8 text-left md:grid-cols-2 md:gap-16"
+    >
+      {
+        faqData.map((faq) => {
+          return (
+            <div class="rounded-xl bg-gray-900/90 p-5">
+              <h3 class="mb-2 flex items-center text-base font-medium md:text-xl">
+                <Icon
+                  name="ph:question-fill"
+                  class="mr-2 h-5 w-5 flex-shrink-0 text-gray-400"
+                />
+                {faq.question}
+              </h3>
+              <p class="text-sm text-gray-200 md:text-base">{faq.answer}</p>
+            </div>
+          );
+        })
+      }
+      <div class="rounded-xl bg-gray-900/90 p-5">
+        <h3 class="mb-2 flex items-center text-base font-medium md:text-xl">
+          <Icon
+            name="ph:question-fill"
+            class="mr-2 h-5 w-5 flex-shrink-0 text-gray-400"
+          />
+          How do I register?
+        </h3>
+        <a
+          href="#"
+          target="_blank"
+          class="text-sm text-gray-200 underline-offset-4 hover:underline md:text-base"
+          >Click Here to fill the form as a particpant :)
+        </a>
+        <br />
+        <a
+          href="#"
+          target="_blank"
+          class="text-sm text-gray-200 underline-offset-4 hover:underline md:text-base"
+          >Or Here to fill it as a volunteer !
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

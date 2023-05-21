@@ -1,0 +1,70 @@
+---
+import { Icon } from "astro-icon";
+
+import { logos } from "../../data/logos";
+---
+
+<section id="landing">
+  <div class="sectiondiv mt-10">
+    <div
+      class="flex flex-col gap-7 rounded-2xl bg-gray-900/70 px-3 py-6 text-center md:max-w-4xl md:gap-9"
+    >
+      <h1 class="text-3xl font-semibold md:text-6xl">Game Camp?</h1>
+      <p class="font-medium leading-7 md:text-xl md:leading-10">
+        A six-day game development camp that equips students and game dev
+        enthusiasts to develop their own games through a variety of workshops,
+        while also competing to create a winning game! 🏆
+      </p>
+
+      <!-- Sign Up Icons -->
+      <div class="flex flex-col items-center justify-center gap-6 text-center">
+        <p class="flex gap-2 text-lg font-semibold md:text-xl">
+          Sign Up <Icon name="fa-solid:hand-point-down" />
+        </p>
+        <!-- Icons -->
+        <div class="flex flex-col gap-6 md:flex-row">
+          <a href="#" target="_blank" class="hover-scale flex gap-2">
+            <Icon name="fa-solid:user-circle" /> as a participant
+          </a>
+          <a href="#" target="_blank" class="hover-scale flex gap-2">
+            <Icon name="fa-solid:hands-helping" /> as a volunteer
+          </a>
+        </div>
+      </div>
+
+      <!-- logos section -->
+      <div
+        class="grid grid-cols-3 items-center justify-items-center md:grid-cols-6"
+      >
+        {
+          logos.map((logo) => {
+            return (
+              <a
+                href={logo.href}
+                target="_blank"
+                class="p-2 transition duration-300 ease-in-out hover:scale-75"
+              >
+                <img
+                  class={
+                    logo.bright ? "w-16 brightness-200 md:w-20" : "w-16 md:w-20"
+                  }
+                  src={logo.src}
+                  alt={logo.name}
+                />
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hover-scale {
+    @apply transition duration-300 ease-in-out hover:scale-110;
+  }
+  svg {
+    @apply h-6;
+  }
+</style>
