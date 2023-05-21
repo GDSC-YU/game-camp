@@ -1,0 +1,36 @@
+---
+import SectionTitle from "./ui/SectionTitle.astro";
+
+import { schedule } from "../../data/workshops";
+---
+
+<section id="Schedule">
+  <div class="sectiondiv">
+    <SectionTitle title="Schedule 🔧" />
+    <div class="grid gap-6 p-3 text-center md:grid-cols-3">
+      {
+        schedule.map((day) => {
+          const dayName = Object.keys(day)[0];
+          const events = day[dayName];
+
+          return (
+            <div class="rounded-lg bg-gray-900/80 shadow">
+              <div class="rounded-t-lg p-4 shadow">
+                <p class="text-2xl font-black">{dayName}</p>
+              </div>
+              <div class="p-4">
+                {events.map((event) => (
+                  <div class="p-3 text-lg font-medium">
+                    {event.name}
+                    <br />
+                    {event.time}
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
