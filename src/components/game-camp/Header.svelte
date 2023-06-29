@@ -1,5 +1,4 @@
 <script>
-  import * as animateScroll from "svelte-scrollto-next";
   import Icon from "@iconify/svelte";
 
   import { navData } from "../../data/nav";
@@ -14,7 +13,7 @@
   };
 </script>
 
-<header class="absolute z-50 w-full font-bold text-white">
+<header class="absolute z-50 w-full text-center font-bold text-white">
   <!-- mobile nav -->
   <nav class="md:hidden">
     <!-- toggles fixed class when the menu is opened -->
@@ -33,41 +32,30 @@
     </div>
     <!-- hidden when the menu is closed -->
     <div
-      class="fixed flex h-screen w-screen flex-col items-center justify-center gap-y-5 whitespace-pre-wrap bg-[#050c21]"
+      class="fixed flex h-screen w-screen flex-col items-center justify-center gap-y-5 whitespace-pre-wrap bg-[#020718]"
       class:hidden={!opened}
     >
       <!-- Links -->
-      <a href="/" class="text-2xl">Home 👾</a>
       {#each navData as link}
-        <button
-          on:click={() => {
-            animateScroll.scrollTo({
-              element: link.href,
-              offset: 90,
-            });
-            handleClick();
-          }}
+        <a
+          href={link.href}
+          class="link text-2xl transition duration-300 ease-in-out lg:hover:scale-110"
         >
-          <p class="text-2xl">{link.name}</p>
-        </button>
+          {link.name}
+        </a>
       {/each}
     </div>
   </nav>
   <!-- Desktop nav -->
   <nav class="mt-8 hidden items-center justify-center gap-x-7 md:flex">
     <!-- Links -->
-    <a href="/" class="text-xl hover:scale-110">Home 👾</a>
     {#each navData as link}
-      <button
-        on:click={() =>
-          animateScroll.scrollTo({
-            element: link.href,
-          })}
+      <a
+        href={link.href}
+        class="link text-xl transition duration-300 ease-in-out lg:hover:scale-110"
       >
-        <p class="text-xl hover:scale-110">
-          {link.name}
-        </p>
-      </button>
+        {link.name}
+      </a>
     {/each}
   </nav>
 </header>

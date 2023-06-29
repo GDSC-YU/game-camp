@@ -9,6 +9,10 @@
   font-family: "Audiowide", cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   @apply flex min-h-screen items-center justify-center px-7 py-24;
 }
