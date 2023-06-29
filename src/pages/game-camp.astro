@@ -1,14 +1,14 @@
 ---
+import Header from "../components/game-camp/ui/Header.svelte";
 // Sections
-import Header from "../components/game-camp/Header.svelte";
 import Hero from "../components/game-camp/Hero.astro";
-import Speakers from "../components/game-camp/people/Speakers.astro";
+import Speakers from "../components/game-camp/Speakers.astro";
 import People from "../components/game-camp/people/People.astro";
 import Workshops from "../components/game-camp/Workshops.astro";
 import Faq from "../components/game-camp/Faq.astro";
 // Stuff
-import Spacer from "../components/game-camp/Spacer.astro";
-import ScrollUp from "../components/game-camp/ScrollUp.svelte";
+import Spacer from "../components/game-camp/ui/Spacer.astro";
+import ScrollUp from "../components/game-camp/ui/ScrollUp.svelte";
 import "../layouts/styles.css";
 ---
 
@@ -17,10 +17,20 @@ import "../layouts/styles.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/logos/gdsc.png" />
+    <link rel="icon" type="image/png" href="/images/logos/gdsc.png" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="A six-day game development camp where we will help you develop your own game through a variety of workshops, while also competing to win a prize! 🏆"
+    />
     <title>Game Camp</title>
-    <link rel="preload" href="/bg/game-camp.gif" as="image" type="image/gif" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="preload"
+      href="/images/bg/game-camp.gif"
+      as="image"
+      type="image/gif"
+    />
   </head>
   <body class="bg-black text-slate-100">
     <Header client:load />
