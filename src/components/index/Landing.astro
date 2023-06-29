@@ -1,0 +1,19 @@
+---
+import TypewriterText from "./typewriterText.svelte";
+import NeonButton from "./NeonButton.astro";
+---
+
+<section
+  class="flex h-screen flex-col items-center justify-center p-4 text-white"
+>
+  <div
+    class="flex w-full flex-col items-center gap-y-12 rounded-xl bg-gray-900/70 py-12 md:max-w-lg"
+  >
+    <TypewriterText client:load />
+    <p class="flex flex-col gap-y-1 font-medium md:text-xl">
+      <span>Code 💻, Craft 🔨, Conquer 👑</span>
+      <span>Your 6-Day Game Dev Quest 🏹</span>
+    </p>
+    <NeonButton />
+  </div>
+</section>

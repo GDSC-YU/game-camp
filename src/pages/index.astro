@@ -1,5 +1,5 @@
 ---
-import Landing from "../components/index/Landing.svelte";
+import Landing from "../components/index/Landing.astro";
 import "../layouts/styles.css";
 ---
 
@@ -14,7 +14,7 @@ import "../layouts/styles.css";
     <link rel="preload" href="/bg/index.gif" as="image" type="image/gif" />
   </head>
 
-  <body id="index" class="h-screen overflow-hidden text-slate-100">
-    <Landing client:load />
+  <body id="index" class="h-screen overflow-hidden">
+    <Landing />
   </body>
 </html>
