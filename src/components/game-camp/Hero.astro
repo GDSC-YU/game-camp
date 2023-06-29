@@ -11,27 +11,27 @@ import { logos } from "../../data/logos";
     >
       <h1 class="text-3xl font-semibold md:text-6xl">Game Camp?</h1>
       <p class="font-medium leading-7 md:text-xl md:leading-10">
-        It is a six-day game development camp that equips students and game dev
+        A six-day game development camp that equips students and game dev
         enthusiasts to develop their own games through a variety of workshops,
-        while also competing to create a winning game! 🏆🕹️
+        while also competing to create a winning game! 🏆
       </p>
 
-      <!-- Signing Up Icons -->
-
+      <!-- Sign Up Icons -->
       <div class="flex flex-col items-center justify-center gap-6 text-center">
         <p class="flex gap-2 text-lg font-semibold md:text-xl">
-          Sign Up <Icon name="fa-solid:hand-point-down" class="h-6" />
+          Sign Up <Icon name="fa-solid:hand-point-down" />
         </p>
         <!-- Icons -->
         <div class="flex flex-col gap-6 md:flex-row">
-          <a href="#" target="_blank" class="flex gap-2 hover:scale-110">
-            <Icon name="fa-solid:user-circle" class="h-6" /> as a participant
+          <a href="#" target="_blank" class="hover-scale flex gap-2">
+            <Icon name="fa-solid:user-circle" /> as a participant
           </a>
-          <a href="#" target="_blank" class="flex gap-2 hover:scale-110">
-            <Icon name="fa-solid:hands-helping" class="h-6" /> as a volunteer
+          <a href="#" target="_blank" class="hover-scale flex gap-2">
+            <Icon name="fa-solid:hands-helping" /> as a volunteer
           </a>
         </div>
       </div>
+
       <!-- logos section -->
       <div
         class="grid grid-cols-3 items-center justify-items-center md:grid-cols-6"
@@ -42,7 +42,7 @@ import { logos } from "../../data/logos";
               <a
                 href={logo.href}
                 target="_blank"
-                class="p-2 transition duration-300 hover:scale-75"
+                class="p-2 transition duration-300 ease-in-out hover:scale-75"
               >
                 <img
                   class={
@@ -59,3 +59,12 @@ import { logos } from "../../data/logos";
     </div>
   </div>
 </section>
+
+<style>
+  .hover-scale {
+    @apply transition duration-300 ease-in-out hover:scale-110;
+  }
+  svg {
+    @apply h-6;
+  }
+</style>
