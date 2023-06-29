@@ -23,7 +23,7 @@
         alt="Google Developers Student Club Logo"
         class="h-20 w-20"
       />
-      <button on:click={toggleMenu}>
+      <button on:click={toggleMenu} aria-label="Toggle Menu">
         <Icon
           icon={opened ? "ri:close-fill" : "ri:menu-4-fill"}
           class="h-9 w-9"

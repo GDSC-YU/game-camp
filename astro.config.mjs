@@ -1,10 +1,11 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
 
 import prefetch from "@astrojs/prefetch";
+import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), svelte(), prefetch()]
+  site: "https://game-camp-2023.netlify.app",
+  integrations: [tailwind(), svelte(), prefetch(), sitemap()],
 });
