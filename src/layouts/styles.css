@@ -22,32 +22,32 @@ section {
 }
 
 #index {
-  background-image: url("/bg/index.gif");
+  background-image: url("/images/bg/index.gif");
   background-size: cover;
 }
 
 #landing {
-  background-image: url("/bg/game-camp.gif");
+  background-image: url("/images/bg/game-camp.gif");
   background-size: cover;
 }
 
 #speakers {
-  background-image: url("/bg/game-camp2.gif");
+  background-image: url("/images/bg/game-camp2.gif");
   background-size: cover;
 }
 
 #people {
-  background-image: url("/bg/game-camp3.gif");
+  background-image: url("/images/bg/game-camp3.gif");
   background-size: cover;
 }
 
 #Schedule {
-  background-image: url("/bg/game-camp4.gif");
+  background-image: url("/images/bg/game-camp4.gif");
   background-size: cover;
 }
 
 #faq {
-  background-image: url("/bg/game-camp5.gif");
+  background-image: url("/images/bg/game-camp5.gif");
   background-size: cover;
   @apply py-5;
 }

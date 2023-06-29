@@ -1,11 +1,11 @@
 <script>
   import Icon from "@iconify/svelte";
 
-  import { navData } from "../../data/nav";
+  import { navData } from "../../../data/nav";
 
   let opened;
 
-  const handleClick = () => {
+  const toggleMenu = () => {
     // toggle opened state to show/hide mobile nav & swap its icon
     opened = !opened;
     // toggle overflow-hidden class to prevent scrolling when mobile nav is open
@@ -19,11 +19,11 @@
     <!-- toggles fixed class when the menu is opened -->
     <div class="z-50 flex w-full justify-between p-5" class:fixed={opened}>
       <img
-        src="/logos/gdsc.png"
+        src="/images/logos/gdsc.png"
         alt="Google Developers Student Club Logo"
         class="h-20 w-20"
       />
-      <button on:click={handleClick}>
+      <button on:click={toggleMenu}>
         <Icon
           icon={opened ? "ri:close-fill" : "ri:menu-4-fill"}
           class="h-9 w-9"
@@ -32,7 +32,7 @@
     </div>
     <!-- hidden when the menu is closed -->
     <div
-      class="fixed flex h-screen w-screen flex-col items-center justify-center gap-y-5 whitespace-pre-wrap bg-[#020718]"
+      class="fixed flex h-[100svh] w-screen flex-col items-center justify-center gap-y-5 whitespace-pre-wrap bg-[#050c21]"
       class:hidden={!opened}
     >
       <!-- Links -->
@@ -44,6 +44,11 @@
           {link.name}
         </a>
       {/each}
+      <img
+        src="/images/ui/header-guy.svg"
+        alt="Our Cute Astronaut Guy :)"
+        class="absolute bottom-0 right-0 transition duration-300 ease-in-out lg:hover:scale-110"
+      />
     </div>
   </nav>
   <!-- Desktop nav -->
