@@ -1,0 +1,70 @@
+---
+import Icon from "astro-icon";
+
+import { Image } from "astro:assets";
+import gdsc from "@assets/images/logos/gdsc.png";
+
+import { navData } from "@/assets/data";
+---
+
+<div
+  class="absolute top-0 z-50 flex w-full flex-row-reverse items-center justify-between rounded-b-3xl p-3 transition-colors duration-700 ease-in-out lg:hidden"
+>
+  <a href="https://www.gdscyu.com/" target="_blank">
+    <Image src={gdsc} alt="GDSC Logo" class="h-16 w-16" />
+  </a>
+  <button id="menuToggle" aria-label="navigation menu toggle button">
+    <Icon name="menu" class="h-9 w-9" />
+    <Icon name="close" class="hidden h-9 w-9" />
+  </button>
+</div>
+<nav id="mobileMenu" class="fixed z-40 hidden">
+  <ul
+    class="flex h-[100lvh] w-screen flex-col items-center justify-center gap-y-8 bg-[#050c21]"
+  >
+    {
+      navData.map((link) => (
+        <li>
+          <a href={link.href} class="block  text-center text-2xl font-medium">
+            {link.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script>
+  if (window.innerWidth < 1024) {
+    const menuButton = document.getElementById("menuToggle") as HTMLDivElement;
+    const mobileMenu = document.getElementById("mobileMenu") as HTMLElement;
+    const navListItems = document.querySelectorAll("ul li a");
+
+    // menu & close icons
+    const menuIcon = document.querySelector("[astro-icon='menu']");
+    const closeIcon = document.querySelector("[astro-icon='close']");
+
+    const toggleMenu = () => {
+      // swap menu & close icons
+      menuIcon!.classList.toggle("hidden");
+      closeIcon!.classList.toggle("hidden");
+
+      // trigger icons animations
+      [menuIcon, closeIcon].forEach((icon) => {
+        (icon as SVGSVGElement).setCurrentTime(0);
+      });
+
+      // toggle visbilility
+      mobileMenu.classList.toggle("hidden");
+      document.body.classList.toggle("overflow-hidden");
+    };
+
+    navListItems.forEach((li) => {
+      li.addEventListener("click", () => {
+        toggleMenu();
+      });
+    });
+
+    menuButton.addEventListener("click", toggleMenu);
+  }
+</script>

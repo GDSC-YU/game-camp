@@ -1,0 +1,45 @@
+---
+import SectionTitle from "@atoms/SectionTitle.astro";
+import ExpertCard from "@atoms/ExpertCard.astro";
+
+import { judges, consultants } from "@data";
+---
+
+<section
+  id="people"
+  class="flex min-h-screen items-center justify-center px-7 py-24"
+>
+  <div class="flex w-full flex-col items-center gap-y-8">
+    <SectionTitle title="الحكام والمستشارين 🧠" />
+    <div
+      class="grid w-full justify-items-center gap-y-4 md:grid-cols-2 lg:grid-cols-3"
+    >
+      {
+        judges.map((dude) => {
+          return (
+            <>
+              <ExpertCard
+                name={dude.name}
+                img={dude.image}
+                position={dude.position}
+              />
+            </>
+          );
+        })
+      }
+      {
+        consultants.map((dude) => {
+          return (
+            <>
+              <ExpertCard
+                name={dude.name}
+                img={dude.image}
+                position={dude.position}
+              />
+            </>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

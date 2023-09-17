@@ -1,0 +1,39 @@
+---
+import SectionTitle from "@atoms/SectionTitle.astro";
+
+import { schedule } from "@data";
+---
+
+<section
+  id="schedule"
+  class="flex min-h-screen items-center justify-center px-7 py-24"
+>
+  <div class="flex w-full flex-col items-center gap-y-8">
+    <SectionTitle title="الجدول 🔧" />
+    <div class="grid gap-6 p-3 text-center md:grid-cols-3">
+      {
+        schedule.map((day) => {
+          const dayName = Object.keys(day)[0];
+          const events = day[dayName];
+
+          return (
+            <div class="rounded-lg bg-gray-900/80 shadow">
+              <div class="rounded-t-lg p-4 shadow">
+                <p class="text-2xl font-black">{dayName}</p>
+              </div>
+              <div class="p-4">
+                {events.map((event) => (
+                  <div class="p-3 text-lg font-medium">
+                    {event.name}
+                    <br />
+                    <span dir="ltr">{event.time}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
