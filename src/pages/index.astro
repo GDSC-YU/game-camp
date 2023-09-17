@@ -1,30 +1,90 @@
 ---
-import Landing from "../components/index/Landing.astro";
-import "../layouts/styles.css";
+import Spacer from "@atoms/Spacer.astro";
+
+import Header from "@organisms/Header.astro";
+import Home from "@organisms/Home.astro";
+import Speakers from "@organisms/Speakers.astro";
+import People from "@organisms/People.astro";
+import Schedule from "@/components/organisms/Schedule.astro";
+import Faq from "@organisms/Faq.astro";
+
+import BackGround from "@assets/images/backgrounds/1.gif";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
   <head>
+    <!-- Global Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/images/logos/gdsc.png" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#050c21" />
+    <link rel="icon" type="image/png" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- Primary Metadata -->
     <meta
       name="description"
-      content="Code 💻, Craft 🔨, Conquer 👑.  Your 6-Day Game Dev Quest 🏹."
+      content="معسكر تطوير ألعاب باللغة العربية يمتد لخمسة أيام يجهزك لتطوير لعبتك الخاصة من خلال مجموعة متنوعة من ورش العمل، بينما تتنافس أيضًا لإنشاء لعبة فائزة 🏆"
     />
-    <title>Game Camp</title>
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <title>معسكر اللعبة 👾</title>
+    <!-- Preloading Font & Background -->
+    <link rel="preload" href={BackGround.src} as="image" type="image/gif" />
     <link
       rel="preload"
-      href="/images/bg/index.gif"
-      as="image"
-      type="image/gif"
+      href="/fonts/Rubik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="crossorigin"
     />
   </head>
-
-  <body id="index" class="h-screen overflow-hidden">
-    <Landing />
+  <body class="text-slate-100">
+    <Header />
+    <Home />
+    <Spacer />
+    <Speakers />
+    <Spacer />
+    <People />
+    <Spacer />
+    <Schedule />
+    <Spacer />
+    <Faq />
   </body>
 </html>
+
+<style is:global>
+  @font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik.woff2") format("woff2-variations");
+    font-weight: 300 900;
+    font-display: swap;
+  }
+
+  * {
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  #home {
+    background-image: url("../assets/images/backgrounds/1.gif");
+    background-size: cover;
+  }
+
+  #speakers {
+    background-image: url("../assets/images/backgrounds/2.gif");
+    background-size: cover;
+  }
+
+  #people {
+    background-image: url("../assets/images/backgrounds/3.gif");
+    background-size: cover;
+  }
+
+  #schedule {
+    background-image: url("../assets/images/backgrounds/4.gif");
+    background-size: cover;
+  }
+
+  #faq {
+    background-image: url("../assets/images/backgrounds/5.gif");
+    background-size: cover;
+  }
+</style>

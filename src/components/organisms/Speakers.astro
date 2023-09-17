@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+
+import SectionTitle from "@atoms/SectionTitle.astro";
+
+import { speakers } from "@data";
+---
+
+<section id="speakers" class="flex min-h-screen items-center justify-center px-7 py-24">
+  <div class="flex w-full flex-col items-center gap-y-8">
+    <SectionTitle title="المتحدثين 💬" />
+    <div
+      class="grid items-center justify-center justify-items-center gap-5 lg:w-11/12 lg:grid-cols-2"
+    >
+      {
+        speakers.map((dude) => {
+          return (
+            <div class="h-full w-full rounded-3xl bg-gray-900/80 p-4">
+              <div class="flex h-full flex-col items-center justify-center sm:flex-row">
+                <Image
+                  src={dude.image}
+                  alt={`${dude.name} image`}`}
+                  class="mb-4 h-44 w-40 flex-shrink-0 rounded-xl object-cover object-center brightness-105 sm:mb-0"
+                />
+                <div class="flex-grow text-center sm:mr-6 sm:text-right">
+                  <h2 class="mb-3 text-xl font-bold lg:text-3xl">{dude.name}</h2>
+                  <p>{dude.background}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

@@ -8,7 +8,7 @@
 
 </div>
 
-This is the upcoming game camp event website, it is built using [Astro](https://astro.build/), [Svelte](https://svelte.dev/), and [Tailwind CSS](https://tailwindcss.com/) <3.
+This is the upcoming game camp event website, it is built using [Astro](https://astro.build/), and [Tailwind CSS](https://tailwindcss.com/) <3.
 
 As this is an upcoming event, there are still many details to be finalized and announced. However, we are excited to bring you a fun and engaging game camp experience in 2023, so stay tuned! 
 

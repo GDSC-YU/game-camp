@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+
+const { img, name, position } = Astro.props;
+---
+
+<div class="w-full p-2">
+  <div class="flex h-full items-center rounded-3xl bg-gray-900/80 p-4">
+    <Image
+      src={img}
+      alt={`${name}'s Image`}
+      class="ml-4 h-20 w-20 flex-shrink-0 overflow-hidden rounded-full bg-[#282C34] object-cover object-center brightness-110"
+    />
+
+    <div class="flex-grow">
+      <h2 class="text-xl font-bold">{name}</h2>
+      <p class="font-medium">{position}</p>
+    </div>
+  </div>
+</div>
