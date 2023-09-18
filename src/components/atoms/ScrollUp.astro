@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<button
+  id="scrollUp"
+  aria-label="Scroll to the top"
+  class="fixed bottom-8 right-8 z-50 hidden rounded-3xl bg-gray-900 bg-gray-900/80 p-2 transition duration-300 ease-in-out hover:scale-110"
+>
+  <Icon name="ri:arrow-up-line" class="h-7 w-7" />
+</button>
+
+<script>
+  const scrollButton = document.getElementById("scrollUp") as HTMLButtonElement;
+  const windowHeight = window.innerHeight;
+
+  // function to handle the visibility of the scroll button
+  const handleVisibility = () => {
+    scrollButton.classList.toggle("hidden", window.scrollY <= windowHeight);
+  };
+
+  // onClick event for the scroll button
+  scrollButton.onclick = () => {
+    // Scroll to the top of the page upon click
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
+  // Add a passive scroll event listener to the handleVisibility function
+  window.addEventListener("scroll", handleVisibility, { passive: true });
+</script>

@@ -1,12 +1,13 @@
 ---
-import Spacer from "@atoms/Spacer.astro";
-
 import Header from "@organisms/Header.astro";
 import Home from "@organisms/Home.astro";
 import Speakers from "@organisms/Speakers.astro";
 import People from "@organisms/People.astro";
-import Schedule from "@/components/organisms/Schedule.astro";
+import Schedule from "@organisms/Schedule.astro";
 import Faq from "@organisms/Faq.astro";
+
+import Spacer from "@atoms/Spacer.astro";
+import ScrollUp from "@atoms/ScrollUp.astro";
 
 import BackGround from "@assets/images/backgrounds/1.gif";
 ---
@@ -47,6 +48,7 @@ import BackGround from "@assets/images/backgrounds/1.gif";
     <Schedule />
     <Spacer />
     <Faq />
+    <ScrollUp />
   </body>
 </html>
 
