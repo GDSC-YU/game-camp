@@ -1,47 +1,25 @@
 ---
-import { Icon } from "astro-icon";
+import Logos from "@atoms/Logos.astro";
+import ActionButton from "@atoms/ActionButton.astro";
 
-import PartnersLogos from "@atoms/PartnersLogos.astro";
+import { description } from "../../pages/index.astro";
 ---
 
 <section
   id="home"
   class="flex min-h-screen items-center justify-center px-7 py-24"
 >
-  <div class="mt-10 flex w-full flex-col items-center gap-y-8">
-    <div
-      class="flex flex-col gap-7 rounded-2xl bg-gray-900/70 p-5 text-center md:max-w-4xl md:gap-9 md:p-10"
-    >
-      <h1 class="text-3xl font-bold md:text-6xl">معسكر اللعبة؟</h1>
-      <p class="font-medium leading-7 md:text-xl md:leading-10">
-        معسكر تطوير ألعاب باللغة العربية يمتد لخمسة أيام يجهزك لتطوير لعبتك
-        الخاصة من خلال مجموعة متنوعة من ورش العمل، بينما تتنافس أيضًا لإنشاء
-        لعبة فائزة 🏆
-      </p>
+  <div
+    class="flex flex-col gap-y-10 rounded-2xl bg-gray-900/70 p-5 text-center md:max-w-4xl md:gap-9 md:p-10"
+  >
+    <h1 class="text-3xl font-bold md:text-6xl">معسكر اللعبة؟</h1>
 
-      <div class="flex flex-col items-center justify-center gap-6 text-center">
-        <p class="flex gap-2 text-xl font-bold md:text-xl">
-          شاركنا! <Icon name="fa-solid:hand-point-down" />
-        </p>
-        <div class="flex gap-6 text-lg font-semibold">
-          <a
-            href="#"
-            target="_blank"
-            class="flex gap-2 transition duration-300 ease-in-out hover:scale-110"
-          >
-            <Icon name="fa-solid:user-circle" class="h-6 w-6" /> متدرب
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            class="flex gap-2 transition duration-300 ease-in-out hover:scale-110"
-          >
-            <Icon name="fa-solid:hands-helping" class="h-6 w-6" /> متطوع
-          </a>
-        </div>
-      </div>
-
-      <PartnersLogos />
-    </div>
+    <p class="font-medium leading-7 md:text-xl md:leading-10">
+      {description}
+    </p>
+    <!-- Sign up now button -->
+    <ActionButton />
+    <!-- logos -->
+    <Logos />
   </div>
 </section>

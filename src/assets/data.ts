@@ -2,140 +2,54 @@
 
 export const navData = [
   { name: "الرئيسية 👾", href: "#home" },
-  { name: "المتحدثين 💬", href: "#speakers" },
-  { name: "الحكام والمستشارون 🧠", href: "#people" },
+  { name: "المتحدثين 📣", href: "#speakers" },
   { name: "الجدول  🗓", href: "#schedule" },
   { name: "الأسئلة الشائعة 🤔", href: "#faq" },
 ];
 
-/* Logos Images & Data */
-
-import dga from "@assets/images/logos/dga.png";
-import gdsc from "@assets/images/logos/gdsc.png";
-import playerOne from "@assets/images/logos/PlayerOne.png";
-import saudiGN from "@assets/images/logos/SaudiGN.png";
-
-export const logos = [
-  {
-    name: "GDSC Al-Yamamah Univirsity Logo",
-    image: gdsc,
-    href: "https://gdscyu.com/",
-    bright: true,
-  },
-  {
-    name: "Player One Logo",
-    image: playerOne,
-    href: "https://playeronegames.net/",
-    bright: true,
-  },
-  {
-    name: "Digital Game Association Logo",
-    image: dga,
-    href: "https://dga.sa/",
-    bright: true,
-  },
-  {
-    name: "SaudiGN Logo",
-    image: saudiGN,
-    href: "https://www.saudigamenews.com/en/",
-  },
-];
-
 /* Speakers Images & Data */
-
-import LaylaAlbabtain from "@assets/images/people/Layla Albabtain.png";
-import MoazAbuShaqiyyah from "@assets/images/people/Moaz Abu Shaqiyyah.png";
-import MohammadAltayyar from "@assets/images/people/Mohammad Altayyar.jpg";
-import QusaiMohammad from "@assets/images/people/Qusai Mohammad.jpg";
+import ZeyadKurdi from "@assets/images/speakers/Zeyad Kurdi.jpg";
+import MoazAbuShaqiyyah from "@assets/images/speakers/Moaz Abu Shaqiyyah.png";
+import MohammadAltayyar from "@assets/images/speakers/Mohammad Altayyar.jpg";
+import TalalAlTurki from "@assets/images/speakers/Talal Al-Turki.jpeg";
+import temprofile from "@assets/images/speakers/temp-profile.jpg";
 
 export const speakers = [
   {
-    name: "ليلى البابطين",
-    position: "متحدثة",
-    background: "المؤسس والمدير التنفيذي Player One",
-    image: LaylaAlbabtain,
+    name: "زياد فهد كردي",
+    position: "متحدث",
+    background: "SasoriSoft Founder & Ex-Game Developer in Japan",
+    image: ZeyadKurdi,
   },
   {
     name: "معاذ أبو شقيه",
     position: "متحدث",
-    background: "مطور ألعاب في استوديو AstraValle",
+    background: "Co-Founder & Creative Director at AstraValle Studio",
     image: MoazAbuShaqiyyah,
   },
   {
     name: "محمد طيار",
     position: "متحدث",
-    background: "صانع محتوى تطوير ألعاب إلكترونية",
+    background: "Game Development Content Creator",
     image: MohammadAltayyar,
-  },
-
-  {
-    name: "قصي محمد",
-    position: "متحدث",
-    background: "شريك مؤسس استوديو Evolite",
-    image: QusaiMohammad,
-  },
-];
-
-/* Judges Images & Data */
-import AbdullahAlhejji from "@assets/images/people/Abdullah Alhejji.jpg";
-import IssamAlshahwan from "@assets/images/people/Issam Alshahwan.jpg";
-import SaraAlsabeg from "@assets/images/people/Sara Al-Sabeg.jpeg";
-
-export const judges = [
-  {
-    name: "عبدالله الحجي",
-    position: "حكم",
-    image: AbdullahAlhejji,
-  },
-  {
-    name: "ليلى البابطين",
-    position: "حكم",
-    image: LaylaAlbabtain,
-  },
-  {
-    name: "عصام الشهوان",
-    position: "حكم",
-    image: IssamAlshahwan,
-  },
-  {
-    name: "سارة السابق",
-    position: "حكم",
-    image: SaraAlsabeg,
-  },
-];
-
-/* Consultants Images & Data */
-import AfrahBinJubair from "@assets/images/people/Afrah Bin Jubair.jpg";
-import KawtharAlrumyan from "@assets/images/people/Kawthar Alrumyan.jpeg";
-import RashidAlomari from "@assets/images/people/Rashid Alomari.jpg";
-import SalmanAlmutairi from "@assets/images/people/Salman Almutairi.jpeg";
-import TalalAlturki from "@assets/images/people/Talal Alturki.jpeg";
-
-export const consultants = [
-  {
-    name: "أفراح بين جبير",
-    position: "مستشارة",
-    image: AfrahBinJubair,
-  },
-  {
-    name: "كوثر الرميان",
-    position: "مستشارة",
-    image: KawtharAlrumyan,
-  },
-  {
-    name: "راشد العمري",
-    position: "مستشار",
-    image: RashidAlomari,
-  },
-  {
-    name: "سلمان المطيري",
-    position: "مستشار",
-    image: SalmanAlmutairi,
   },
   {
     name: "طلال التركي",
-    position: "مستشار",
-    image: TalalAlturki,
+    position: "متحدث",
+    background: "Game Design at Steer Studios",
+    image: TalalAlTurki,
+  },
+  {
+    name: "أنس خبش",
+    position: "متحدث",
+    background: "سيُعلن عنه لاحقًا",
+    image: temprofile,
+  },
+  {
+    name: "سيُعلن عنه لاحقًا",
+    position: "متحدث",
+    background: "سيُعلن عنه لاحقًا",
+    image: temprofile,
   },
 ];
 
@@ -145,81 +59,75 @@ export interface Schedule {
 
 export const schedule: Schedule[] = [
   {
-    الأحد: [
-      { name: "ما هو معسكر اللعبة؟", time: "5:00 pm - 5:10 pm" },
-      { name: "مقدمة في تطوير اللعبة", time: "5:10 pm - 6:00 pm" },
-      { name: "استراحة أكل", time: "6:00 pm - 6:30 pm" },
-      { name: "مقدمة في تصميم الألعاب", time: "6:00 pm - 6:40 pm" },
-      { name: "تصميم المراحل", time: "6:40 pm - 7:10 pm" },
-      { name: "عصف ذهني", time: "7:10 pm - 8:00 am" },
+    الخميس: [
+      {
+        name: "مقدمة في تطوير اللعبة",
+
+        time: "4:00 pm - 5:00 pm",
+      },
+      {
+        name: "مقدمة في تصميم الألعاب",
+
+        time: "5:00 pm - 6:15 pm",
+      },
+      { name: "استراحة أكل", time: "6:15 pm - 6:45 pm" },
+      { name: "تصميم المراحل", time: "6:45 pm - 8:00 pm" },
     ],
   },
   {
-    الاثنين: [
+    الجمعة: [
       {
         name: "مقدمة في الفنون ثنائية الأبعاد",
-        time: "5:00 pm - 6:00 pm",
+
+        time: "4:00 pm - 5:00 pm",
       },
       {
         name: "تطوير الألعاب ثنائية الأبعاد باستخدام Unity",
-        time: "6:00 pm - 7:00 pm",
+
+        time: "5:00 pm - 6:30 pm",
       },
-      { name: "استراحة أكل", time: "7:00 pm - 7:30 pm" },
-      { name: "تصميم حركة الشخصيات", time: "7:30 pm - 8:30 am" },
+      { name: "استراحة أكل", time: "6:30 pm - 7:00 pm" },
+
+      {
+        name: "مقدمة في الفنون ثلاثية الأبعاد",
+
+        time: "7:00 pm - 8:00 am",
+      },
     ],
   },
   {
-    الثلاثاء: [
+    السبت: [
       {
-        name: "مقدمة في الفنون ثلاثية الأبعاد",
-        time: "5:00 pm - 6:00 pm",
+        name: "تصميم حركة الشخصيات",
+
+        time: "4:00 pm - 5:00 pm",
       },
       {
         name: "تطوير الألعاب ثلاثية الأبعاد باستخدام Unity",
-        time: "6:00 pm - 7:00 pm",
+
+        time: "5:00 pm - 6:30 pm",
       },
-      { name: "استراحة أكل", time: "7:00 pm - 7:30 pm" },
-      { name: "واجهة المستخدم", time: "7:30 pm - 8:00 pm" },
-      { name: "شرح عن المسابقة ومساحة للأسئلة", time: "8:00 pm - 8:30 pm" },
-    ],
-  },
-  {
-    الأربعاء: [
-      { name: "تطوير الألعاب", time: "4:30 pm - 6:00 pm" },
-      { name: "استراحة أكل", time: "6:00 pm - 6:30 pm" },
-      { name: "تطوير الألعاب", time: "6:30 pm - 8:30 pm" },
-      { name: "تسليم الألعاب", time: "8:30 pm - 9:30 pm" },
-    ],
-  },
-  {
-    الخميس: [
-      { name: "عرض الألعاب", time: "4:30 pm - 6:00 pm" },
-      { name: "استراحة أكل", time: "6:00 pm - 6:30 pm" },
-      { name: "وقت فراغ واختيار الفائزين", time: "6:30 pm - 7:30 pm" },
-      { name: "تسليم الجوائز والشهادات", time: "7:30 pm - 8:30 pm" },
+      { name: "استراحة أكل", time: "6:30 pm - 7:00 pm" },
+      { name: "واجهة المستخدم", time: "7:00 pm - 8:00 pm" },
     ],
   },
 ];
 
 export const faqData = [
   {
-    question: "من يمكنه حضور معسكر الألعاب؟",
-    answer: "أي شخص مهتم بتعلم تطوير الألعاب من طلبة جامعة اليمامة!",
+    question: "من يمكنه المشاركة في المعسكر؟",
+    answer: "أي شخص مهتم بتعلم تطوير الألعاب!",
   },
   {
-    question: "ماذا سأتعلم في المعسكر؟",
-    answer: "سوف تتعلم عن تصميم الألعاب وبرمجتها من خلال ورش عمل مثرية.",
+    question: "ما الذي سأتعلمه في المعسكر؟",
+    answer: "تصميم الألعاب وبرمجتها من خلال ورش عمل مثرية.",
   },
   {
-    question: "هل أحتاج إلى خبرة سابقة للحضور؟",
+    question: "هل يجب أن يكون لدي خبرة لحضور المعسكر؟",
     answer: "لا تحتاج إلى أي خبرة سابقة؛ البرنامج مصمم للمبتدئين.",
   },
   {
-    question: "متى وأين سيعقد؟",
-    answer: "لم نحدد بعد.",
-  },
-  {
-    question: "كم سوف يكلف؟",
-    answer: "لا شيء! سوف نوفر حتى الطعام والقهوة مجاناً.",
+    question: "ما الذي أحتاج إلى اصطحابه معي للمعسكر؟",
+    answer: "جهاز كمبيوتر محمول شخصي وبرنامج يونيتي مثبت مسبقًا.",
   },
 ];

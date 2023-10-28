@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+
+import gdsc from "@assets/images/logos/gdsc.png";
+import yu from "@assets/images/logos/Yu.svg";
+---
+
+<div
+  class="flex flex-row-reverse items-center justify-center gap-x-9 text-center"
+>
+  <a
+    href="https://gdscyu.com/"
+    target="_blank"
+    class="transition duration-300 ease-in-out hover:scale-75"
+  >
+    <Image src={gdsc} alt="Google DSC Al-Yamamah Logo" class="w-28" />
+  </a>
+  <a
+    href="https://yu.edu.sa/"
+    target="_blank"
+    class="transition duration-300 ease-in-out hover:scale-75"
+  >
+    <Image src={yu} alt="Al-Yamamah Univirsity Logo" class="w-44" />
+  </a>
+</div>
