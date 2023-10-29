@@ -10,6 +10,7 @@ export const navData = [
 /* Speakers Images & Data */
 import ZeyadKurdi from "@assets/images/speakers/Zeyad Kurdi.jpg";
 import MoazAbuShaqiyyah from "@assets/images/speakers/Moaz Abu Shaqiyyah.png";
+import AnasBakhsh from "@assets/images/speakers/Anas Bakhsh.jpeg";
 import MohammadAltayyar from "@assets/images/speakers/Mohammad Altayyar.jpg";
 import TalalAlTurki from "@assets/images/speakers/Talal Al-Turki.jpeg";
 import temprofile from "@assets/images/speakers/temp-profile.jpg";
@@ -18,14 +19,20 @@ export const speakers = [
   {
     name: "زياد فهد كردي",
     position: "متحدث",
-    background: "SasoriSoft Founder & Ex-Game Developer in Japan",
+    background: "SasoriSoft Founder & Former Developer in Japan",
     image: ZeyadKurdi,
   },
   {
-    name: "معاذ أبو شقيه",
+    name: "معاذ أبو شيقه",
     position: "متحدث",
     background: "Co-Founder & Creative Director at AstraValle Studio",
     image: MoazAbuShaqiyyah,
+  },
+  {
+    name: "أنس بخش",
+    position: "متحدث",
+    background: "Co-Founder & CTO at Ash Games Studio",
+    image: AnasBakhsh,
   },
   {
     name: "محمد طيار",
@@ -38,12 +45,6 @@ export const speakers = [
     position: "متحدث",
     background: "Game Design at Steer Studios",
     image: TalalAlTurki,
-  },
-  {
-    name: "أنس خبش",
-    position: "متحدث",
-    background: "سيُعلن عنه لاحقًا",
-    image: temprofile,
   },
   {
     name: "سيُعلن عنه لاحقًا",
