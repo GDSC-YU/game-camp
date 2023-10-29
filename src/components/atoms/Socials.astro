@@ -1,0 +1,100 @@
+---
+import Icon from "astro-icon";
+
+interface Props {
+  name: string;
+  x: string | null;
+  github: string | null;
+  instagram: string | null;
+  linkedin: string | null;
+  youtube: string | null;
+  itch: string | null;
+  medium: string | null;
+}
+
+const { name, x, github, instagram, linkedin, youtube, itch, medium } =
+  Astro.props;
+---
+
+{
+  github || x || instagram || linkedin || youtube || itch || medium ? (
+    <div class="flex w-full justify-center gap-x-3 p-1 sm:justify-start">
+      {x && (
+        <a
+          href={x}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s X Account`}
+        >
+          <Icon name="x" />
+        </a>
+      )}
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s GitHub Profile`}
+        >
+          <Icon name="github" />
+        </a>
+      )}
+      {instagram && (
+        <a
+          href={instagram}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s Instagram Account`}
+        >
+          <Icon name="instagram" class="text-dark-pink h-5 w-5" />
+        </a>
+      )}
+      {linkedin && (
+        <a
+          href={linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s LinkedIn Profile`}
+        >
+          <Icon name="linkedin" />
+        </a>
+      )}
+      {youtube && (
+        <a
+          href={youtube}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s youtube Profile`}
+        >
+          <Icon name="youtube" />
+        </a>
+      )}
+      {itch && (
+        <a
+          href={itch}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s itch Profile`}
+        >
+          <Icon name="itch" />
+        </a>
+      )}
+      {medium && (
+        <a
+          href={medium}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s medium Profile`}
+        >
+          <Icon name="medium" />
+        </a>
+      )}
+    </div>
+  ) : null
+}
+
+<style>
+  svg {
+    @apply h-6 w-6 transition duration-300 ease-in-out hover:scale-110;
+  }
+</style>
