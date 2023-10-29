@@ -12,45 +12,45 @@ import ZeyadKurdi from "@assets/images/speakers/Zeyad Kurdi.jpg";
 import MoazAbuShaqiyyah from "@assets/images/speakers/Moaz Abu Shaqiyyah.png";
 import AnasBakhsh from "@assets/images/speakers/Anas Bakhsh.jpeg";
 import MohammadAltayyar from "@assets/images/speakers/Mohammad Altayyar.jpg";
+import HindAlBeayez from "@assets/images/speakers/Hind Al-Beayez.jpeg";
 import TalalAlTurki from "@assets/images/speakers/Talal Al-Turki.jpeg";
-import temprofile from "@assets/images/speakers/temp-profile.jpg";
+import ElhamAlOmran from "@assets/images/speakers/Elham Al-Omran.jpeg";
 
 export const speakers = [
   {
     name: "زياد فهد كردي",
-    position: "متحدث",
     background: "SasoriSoft Founder & Former Developer in Japan",
     image: ZeyadKurdi,
   },
   {
     name: "معاذ أبو شيقه",
-    position: "متحدث",
     background: "Co-Founder & Creative Director at AstraValle Studio",
     image: MoazAbuShaqiyyah,
   },
   {
     name: "أنس بخش",
-    position: "متحدث",
     background: "Co-Founder & CTO at Ash Games Studio",
     image: AnasBakhsh,
   },
   {
     name: "محمد طيار",
-    position: "متحدث",
-    background: "Game Development Content Creator",
+    background: "Game Developer & Content Creator",
     image: MohammadAltayyar,
   },
   {
+    name: "هند البعيز",
+    background: "Game UI/UX Designer at Steer Studios",
+    image: HindAlBeayez,
+  },
+  {
     name: "طلال التركي",
-    position: "متحدث",
     background: "Game Design at Steer Studios",
     image: TalalAlTurki,
   },
   {
-    name: "سيُعلن عنه لاحقًا",
-    position: "متحدث",
-    background: "سيُعلن عنه لاحقًا",
-    image: temprofile,
+    name: "إلهام عمران",
+    background: "Game UI/UX Designer at Steer Studios",
+    image: ElhamAlOmran,
   },
 ];
 
