@@ -6,7 +6,7 @@
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@images/*": ["src/assets/images/*"],
-      "@data": ["src/assets/data.ts"],
+      "@data/*": ["src/assets/data/*"],
       "@atoms/*": ["src/components/atoms/*"],
       "@molecules/*": ["src/components/molecules/*"],
       "@organisms/*": ["src/components/organisms/*"]

@@ -2,8 +2,9 @@
 import { Image } from "astro:assets";
 
 import SectionTitle from "@atoms/SectionTitle.astro";
+import Socials from "@atoms/Socials.astro";
 
-import { speakers } from "@data";
+import { speakers } from "@data/humans";
 ---
 
 <section
@@ -25,11 +26,19 @@ import { speakers } from "@data";
                   alt={`${dude.name} image`}
                   class="mb-4 h-44 w-40 flex-shrink-0 rounded-xl object-cover object-center brightness-105 sm:mb-0"
                 />
-                <div class="flex-grow text-center sm:mr-6 sm:text-right">
-                  <h2 class="mb-3 text-xl font-bold lg:text-3xl">
-                    {dude.name}
-                  </h2>
+                <div class="flex flex-grow flex-col gap-y-3 text-center sm:mr-6 sm:text-right">
+                  <h2 class="text-xl font-bold lg:text-3xl">{dude.name}</h2>
                   <p>{dude.background}</p>
+                  <Socials
+                    name={dude.name}
+                    github={dude.socials.github}
+                    x={dude.socials.x}
+                    instagram={dude.socials.instagram}
+                    linkedin={dude.socials.linkedin}
+                    youtube={dude.socials.youtube}
+                    itch={dude.socials.itch}
+                    medium={dude.socials.medium}
+                  />
                 </div>
               </div>
             </div>
