@@ -10,9 +10,10 @@ interface Props {
   youtube: string | null;
   itch: string | null;
   medium: string | null;
+  behance: string | null;
 }
 
-const { name, x, github, instagram, linkedin, youtube, itch, medium } =
+const { name, x, github, instagram, linkedin, youtube, itch, medium, behance } =
   Astro.props;
 ---
 
@@ -87,6 +88,16 @@ const { name, x, github, instagram, linkedin, youtube, itch, medium } =
           aria-label={`${name}'s medium Profile`}
         >
           <Icon name="medium" />
+        </a>
+      )}
+      {behance && (
+        <a
+          href={behance}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${name}'s behance Profile`}
+        >
+          <Icon name="behance" />
         </a>
       )}
     </div>
