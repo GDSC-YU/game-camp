@@ -1,10 +1,9 @@
-import AnasBakhsh from "@assets/images/speakers/Anas Bakhsh.jpeg";
-import ElhamAlOmran from "@assets/images/speakers/Elham Al-Omran.jpeg";
-import HindAlBeayez from "@assets/images/speakers/Hind Al-Beayez.jpeg";
-import MoazAbuShaqiyyah from "@assets/images/speakers/Moaz Abu Shaqiyyah.png";
-import MohammadAltayyar from "@assets/images/speakers/Mohammad Altayyar.jpg";
-import TalalAlTurki from "@assets/images/speakers/Talal Al-Turki.jpeg";
-import ZeyadKurdi from "@assets/images/speakers/Zeyad Kurdi.jpg";
+import AnasBakhsh from "@assets/images/humans/Anas Bakhsh.jpeg";
+import MoazAbuShaqiyyah from "@assets/images/humans/Moaz Abu Shaqiyyah.png";
+import MuathAlHajjam from "@assets/images/humans/Muath Al-Hajjam.jpg";
+import MohammadAltayyar from "@assets/images/humans/Mohammad Altayyar.jpg";
+import TalalAlTurki from "@assets/images/humans/Talal Al-Turki.jpeg";
+import ZeyadKurdi from "@assets/images/humans/Zeyad Kurdi.jpg";
 
 interface Socials {
   x: string | null;
@@ -14,6 +13,7 @@ interface Socials {
   youtube: string | null;
   itch: string | null;
   medium: string | null;
+  behance: string | null;
 }
 
 interface Speaker {
@@ -34,8 +34,9 @@ export const speakers: Speaker[] = [
       instagram: null,
       linkedin: "https://linkedin.com/in/anas-bakhsh-98012777",
       youtube: null,
-      itch: "https://djinn247.itch.io/",
+      itch: "https://djinn247.itch.io",
       medium: null,
+      behance: null,
     },
   },
   {
@@ -46,10 +47,26 @@ export const speakers: Speaker[] = [
       x: "https://x.com/Mads_Space",
       github: null,
       instagram: null,
-      linkedin: "https://linkedin.com/in/moath-abushayqah-4a399b1a8/",
+      linkedin: "https://linkedin.com/in/moath-abushayqah-4a399b1a8",
       youtube: null,
       itch: null,
       medium: null,
+      behance: null,
+    },
+  },
+  {
+    name: "معاذ رياض الحجام",
+    background: "Senior Art director, Game Artist, & Animator at BDR Studio",
+    image: MuathAlHajjam,
+    socials: {
+      x: null,
+      github: null,
+      instagram: "https://www.instagram.com/muath_alhajjam",
+      linkedin: "https://www.linkedin.com/in/muaz-alhajjam-728661163",
+      youtube: null,
+      itch: null,
+      medium: null,
+      behance: "https://www.behance.net/moazal-hajjam1",
     },
   },
   {
@@ -64,6 +81,7 @@ export const speakers: Speaker[] = [
       youtube: "https://youtube.com/watch?v=4GN-5Uk2E9E",
       itch: null,
       medium: null,
+      behance: null,
     },
   },
   {
@@ -78,6 +96,7 @@ export const speakers: Speaker[] = [
       youtube: "https://youtube.com/@MTGameMaker",
       itch: null,
       medium: null,
+      behance: null,
     },
   },
   {
@@ -88,38 +107,11 @@ export const speakers: Speaker[] = [
       x: "https://x.com/OG_Gemzer",
       github: "https://github.com/TalalMAlT",
       instagram: null,
-      linkedin: "https://linkedin.com/in/talal-alturki/",
+      linkedin: "https://linkedin.com/in/talal-alturki",
       youtube: null,
-      itch: "https://talalalt.itch.io/",
+      itch: "https://talalalt.itch.io",
       medium: null,
-    },
-  },
-  {
-    name: "هند البعيز",
-    background: "Game UI/UX Designer",
-    image: HindAlBeayez,
-    socials: {
-      x: null,
-      github: null,
-      instagram: null,
-      linkedin: "https://linkedin.com/in/hindbea/",
-      youtube: null,
-      itch: null,
-      medium: null,
-    },
-  },
-  {
-    name: "إلهام عمران",
-    background: "Game UI/UX Designer",
-    image: ElhamAlOmran,
-    socials: {
-      x: null,
-      github: null,
-      instagram: null,
-      linkedin: "https://linkedin.com/in/elham-alomran-b00551207/",
-      youtube: null,
-      itch: null,
-      medium: null,
+      behance: null,
     },
   },
 ];
