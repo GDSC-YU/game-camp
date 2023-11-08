@@ -1,8 +1,8 @@
 import AnasBakhsh from "@assets/images/humans/Anas Bakhsh.jpeg";
 import MoazAbuShaqiyyah from "@assets/images/humans/Moaz Abu Shaqiyyah.png";
 import MuathAlHajjam from "@assets/images/humans/Muath Al-Hajjam.jpg";
-import MohammadAltayyar from "@assets/images/humans/Mohammad Altayyar.jpg";
 import TalalAlTurki from "@assets/images/humans/Talal Al-Turki.jpeg";
+import ThamerBabgi from "@assets/images/humans/Thamer Babgi.jpeg";
 import ZeyadKurdi from "@assets/images/humans/Zeyad Kurdi.jpg";
 
 interface Socials {
@@ -56,7 +56,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: "معاذ رياض الحجام",
-    background: "Senior Art director, Game Artist, & Animator at BDR Studio",
+    background: "Senior Art director & Animator at BDR Studio",
     image: MuathAlHajjam,
     socials: {
       x: null,
@@ -70,36 +70,6 @@ export const speakers: Speaker[] = [
     },
   },
   {
-    name: "زياد فهد كردي",
-    background: "SasoriSoft Founder & Former Developer in Japan",
-    image: ZeyadKurdi,
-    socials: {
-      x: null,
-      github: null,
-      instagram: null,
-      linkedin: "http://linkedin.com/in/zeyad-kurdi",
-      youtube: "https://youtube.com/watch?v=4GN-5Uk2E9E",
-      itch: null,
-      medium: null,
-      behance: null,
-    },
-  },
-  {
-    name: "محمد طيار",
-    background: "IT Security & Biz Dev by day, Content Creation by night",
-    image: MohammadAltayyar,
-    socials: {
-      x: "https://x.com/mtayyar2",
-      github: null,
-      instagram: null,
-      linkedin: null,
-      youtube: "https://youtube.com/@MTGameMaker",
-      itch: null,
-      medium: null,
-      behance: null,
-    },
-  },
-  {
     name: "طلال التركي",
     background: "Game Design & Computer Engineering",
     image: TalalAlTurki,
@@ -110,6 +80,36 @@ export const speakers: Speaker[] = [
       linkedin: "https://linkedin.com/in/talal-alturki",
       youtube: null,
       itch: "https://talalalt.itch.io",
+      medium: null,
+      behance: null,
+    },
+  },
+  {
+    name: "ثامر البابغي",
+    background: "3D Artist & Animator at Steer Studios",
+    image: ThamerBabgi,
+    socials: {
+      x: "https://x.com/thamerbabgi",
+      github: null,
+      instagram: "https://www.instagram.com/babgi",
+      linkedin: "https://www.linkedin.com/in/thamer-babgi-95b264119",
+      youtube: "https://www.youtube.com/@tbabgi",
+      itch: null,
+      medium: null,
+      behance: null,
+    },
+  },
+  {
+    name: "زياد فهد كردي",
+    background: "SasoriSoft Founder & Former Developer in Japan",
+    image: ZeyadKurdi,
+    socials: {
+      x: null,
+      github: null,
+      instagram: null,
+      linkedin: "http://linkedin.com/in/zeyad-kurdi",
+      youtube: "https://youtube.com/watch?v=4GN-5Uk2E9E",
+      itch: null,
       medium: null,
       behance: null,
     },
