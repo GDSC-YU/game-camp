@@ -1,8 +1,8 @@
 import AnasBakhsh from "@assets/images/humans/Anas Bakhsh.jpeg";
+import GhadaBaazim from "@assets/images/humans/Ghada Baazim.jpg";
 import MoazAbuShaqiyyah from "@assets/images/humans/Moaz Abu Shaqiyyah.png";
 import MuathAlHajjam from "@assets/images/humans/Muath Al-Hajjam.jpg";
 import TalalAlTurki from "@assets/images/humans/Talal Al-Turki.jpeg";
-import ThamerBabgi from "@assets/images/humans/Thamer Babgi.jpeg";
 import ZeyadKurdi from "@assets/images/humans/Zeyad Kurdi.jpg";
 
 interface Socials {
@@ -14,6 +14,7 @@ interface Socials {
   itch: string | null;
   medium: string | null;
   behance: string | null;
+  website: string | null;
 }
 
 interface Speaker {
@@ -37,6 +38,23 @@ export const speakers: Speaker[] = [
       itch: "https://djinn247.itch.io",
       medium: null,
       behance: null,
+      website: null,
+    },
+  },
+  {
+    name: "غادة باعظيم",
+    background: "3D Animator at Steer Studios",
+    image: GhadaBaazim,
+    socials: {
+      x: null,
+      github: null,
+      instagram: "https://www.instagram.com/gasb0_",
+      linkedin: "https://www.linkedin.com/in/ghada-baazim-0018131b1",
+      youtube: null,
+      itch: null,
+      medium: null,
+      behance: null,
+      website: "https://ghadabaazim.squarespace.com",
     },
   },
   {
@@ -52,6 +70,7 @@ export const speakers: Speaker[] = [
       itch: null,
       medium: null,
       behance: null,
+      website: null,
     },
   },
   {
@@ -67,6 +86,7 @@ export const speakers: Speaker[] = [
       itch: null,
       medium: null,
       behance: "https://www.behance.net/moazal-hajjam1",
+      website: null,
     },
   },
   {
@@ -82,21 +102,7 @@ export const speakers: Speaker[] = [
       itch: "https://talalalt.itch.io",
       medium: null,
       behance: null,
-    },
-  },
-  {
-    name: "ثامر البابغي",
-    background: "3D Artist & Animator at Steer Studios",
-    image: ThamerBabgi,
-    socials: {
-      x: "https://x.com/thamerbabgi",
-      github: null,
-      instagram: "https://www.instagram.com/babgi",
-      linkedin: "https://www.linkedin.com/in/thamer-babgi-95b264119",
-      youtube: "https://www.youtube.com/@tbabgi",
-      itch: null,
-      medium: null,
-      behance: null,
+      website: null,
     },
   },
   {
@@ -112,6 +118,7 @@ export const speakers: Speaker[] = [
       itch: null,
       medium: null,
       behance: null,
+      website: null,
     },
   },
 ];
