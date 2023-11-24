@@ -8,9 +8,11 @@
 
 </div>
 
-This is the upcoming game camp event website, it is built using [Astro](https://astro.build/), and [Tailwind CSS](https://tailwindcss.com/) <3.
+This is the ~~upcoming~~ game camp event website, it is built using [Astro](https://astro.build/), and [Tailwind CSS](https://tailwindcss.com/).
 
-As this is an upcoming event, there are still many details to be finalized and announced. However, we are excited to bring you a fun and engaging game camp experience in 2023, so stay tuned! 
+~~As this is an upcoming event, there are still many details to be finalized and announced. However, we are excited to bring you a fun and engaging game camp experience in 2023, so stay tuned!~~
+
+The camp was a tremendous [success](https://gdsc.community.dev/events/details/developer-student-clubs-al-yamamah-presents-game-camp/)! A big thank you to everyone who participated and contributed to this memorable experience <3
 
 ## Contributing 🤝
 
