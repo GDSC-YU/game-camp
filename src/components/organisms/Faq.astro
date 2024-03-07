@@ -17,13 +17,13 @@ import { faqData } from "@data/faq";
         faqData.map((faq) => {
           return (
             <div class="rounded-xl bg-gray-900/90 p-5">
-              <h3 class="mb-2 flex items-center text-base font-medium md:text-xl">
+              <p class="mb-2 flex items-center text-base font-medium md:text-xl">
                 <Icon
                   name="ph:question-fill"
                   class="ml-2 h-5 w-5 flex-shrink-0 text-gray-400"
                 />
                 {faq.question}
-              </h3>
+              </p>
               <p class="text-sm text-gray-200 md:text-base">{faq.answer}</p>
             </div>
           );
