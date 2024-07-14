@@ -22,7 +22,10 @@ const navData = [
       {
         navData.map((link) => (
           <li>
-            <a href={link.href} class="text-xl font-medium">
+            <a
+              href={link.href}
+              class="text-xl font-medium transition-opacity hover:opacity-80"
+            >
               {link.name}
             </a>
           </li>
