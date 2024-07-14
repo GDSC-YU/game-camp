@@ -1,0 +1,107 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+import gdsc from "@assets/images/logos/gdsc.png";
+
+const navData = [
+  { name: "الرئيسية 👾", href: "#home" },
+  { name: "المتحدثين 📣", href: "#speakers" },
+  { name: "الجدول 🗓", href: "#schedule" },
+  { name: "الأسئلة الشائعة 🤔", href: "#faq" },
+];
+---
+
+<header>
+  <nav>
+    <!-- desktop nav -->
+    <ul
+      id="desktopMenu"
+      class="fixed left-0 right-0 top-3 z-50 mx-auto hidden w-fit justify-center gap-x-10 rounded-full p-6 lg:flex"
+    >
+      {
+        navData.map((link) => (
+          <li>
+            <a href={link.href} class="text-xl font-medium">
+              {link.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- mobile nav -->
+    <div
+      class="fixed left-0 right-0 top-0 z-50 flex justify-between p-3 lg:hidden"
+    >
+      <div
+        id="menuToggle"
+        class="flex size-14 items-center justify-center rounded-2xl"
+      >
+        <button aria-label="navigation menu toggle button">
+          <Icon name="menu" class="size-9" />
+          <Icon name="close" class="hidden size-9" />
+        </button>
+      </div>
+      <div
+        id="gdscLogo"
+        class="flex size-14 items-center justify-center rounded-2xl"
+      >
+        <a href="https://www.gdscyu.com/" target="_blank">
+          <Image src={gdsc} alt="GDSC Logo" />
+        </a>
+      </div>
+    </div>
+    <ul
+      id="mobileMenu"
+      class="fixed z-40 hidden h-[100lvh] w-screen flex-col items-center justify-center gap-y-8 bg-[#050c21]"
+    >
+      {
+        navData.map((link) => (
+          <li>
+            <a href={link.href} class="block text-center text-2xl font-medium">
+              {link.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menuToggle") as HTMLDivElement;
+    const mobileMenu = document.getElementById("mobileMenu") as HTMLElement;
+    const navListItems = document.querySelectorAll(
+      "#mobileMenu a"
+    ) as NodeListOf<HTMLAnchorElement>;
+    const [menuIcon, closeIcon] = menuButton.querySelectorAll(
+      "svg"
+    ) as NodeListOf<SVGSVGElement>;
+    const mobileLogo = document.getElementById("gdscLogo") as HTMLElement;
+
+    const toggleMenu = (): void => {
+      menuIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("flex");
+      document.body.classList.toggle("overflow-hidden");
+    };
+
+    navListItems.forEach((link) => link.addEventListener("click", toggleMenu));
+    menuButton.addEventListener("click", toggleMenu);
+
+    const handleScroll = () => {
+      const navbar = document.getElementById("desktopMenu") as HTMLElement;
+      const scrollY = window.scrollY > 10;
+      if (navbar) {
+        navbar.classList.toggle("bg-gray-900/80", scrollY);
+      }
+      menuButton.classList.toggle("bg-gray-900/80", scrollY);
+      mobileLogo.classList.toggle("bg-gray-900/80", scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  });
+</script>

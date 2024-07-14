@@ -7,9 +7,7 @@
       "@assets/*": ["src/assets/*"],
       "@images/*": ["src/assets/images/*"],
       "@data/*": ["src/assets/data/*"],
-      "@atoms/*": ["src/components/atoms/*"],
-      "@molecules/*": ["src/components/molecules/*"],
-      "@organisms/*": ["src/components/organisms/*"]
+      "@components/*": ["src/components/*"]
     }
   }
 }
